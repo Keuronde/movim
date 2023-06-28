@@ -87,6 +87,7 @@ php composer.phar install
 
 You can also update your current Movim instance with the following lines (check anyway if the updates do not include any incompatibilities with your current version).
 ```bash
+sudo -s -u www-data # We use the web-server user
 cd /var/www/movim/
 git pull # To update the Movim source-code
 composer install # To update the libraries
